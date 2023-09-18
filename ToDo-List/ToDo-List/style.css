@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+#inputTask{
+    height: 35px;
+    width: 250px;
+    margin: 15px 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-weight: 700;
+    box-shadow: 2px 2px 4px black;
+}
+#addBtn{
+    height: 35px;
+    width: 85px;
+    font-size: 14px;
+    margin: 15px 3px;
+    margin-left: 5px;
+    font-weight: bolder;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(146, 50, 125);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px black;
+}
+#addBtn:hover{
+    background-color: rgb(114, 12, 60);
+    color: black;
+}
+#date{
+    height: 35px;
+    width: 100px;
+    margin: 15px 0px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px;
+    box-shadow: 2px 2px 4px black;
+}
+#date:hover{
+    cursor: pointer;
+}
+
+.filter{
+    background-color: black;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 5px 5px 4px rgb(49, 47, 47);
+    margin-bottom: 8px;
+}
+#all,#active,#completed,#deleted,#default{
+    height: 30px;
+    padding: 2px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    margin: 12px 12px; 
+    font-weight: bolder;
+    cursor: pointer;
+}
+#all{
+    width: 50px;
+    background-color: rgb(17, 184, 114);
+    color: white;
+}
+#all:hover{
+    background-color: rgba(255, 0, 234, 0.719);
+}
+#active{
+    background-color: blue;
+    width: 57px;
+    color: white;
+}
+#active:hover{
+    background-color: rgba(0, 0, 255, 0.548);
+}
+#completed{
+    background-color: rgb(8, 255, 8);
+    width: 84px;
+}
+#completed:hover{
+    background-color: rgba(8, 255, 8, 0.575);
+}
+#deleted{
+    background-color: red;
+    color: white;
+    width: 60px;
+}
+#deleted:hover{
+    background-color: rgba(172, 25, 25, 0.664);
+}
+#default{
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    width: 57px;
+}
+#default:hover{
+    background-color: rgba(0, 255, 255, 0.671);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+#list-container li{
+    background-color: black;
+    background-color: rgb(75, 170, 224);
+    width: 450px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 3px rgb(36, 35, 35);
+    height: 46px;
+    margin: 5px auto;
+    padding-right: 8px;
+    padding-left: 6px;
+    border: 1px solid black;
+    display: flex;
+}
+i{
+    margin-top: 14px;
+}
+.fa-pen-to-square{
+    font-size: 20px;
+    line-height: 14px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.fa-delete-left{
+    font-size: 25px;
+    line-height: 15px;
+    cursor: pointer;
+}
+.checkBtn{
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    accent-color: blue;
+    cursor: pointer;
+}
+span{
+    font-weight: bold;
+    margin-left: 5px;
+    line-height: 44px;
+    width: 350px;
+    font-size: 18px;
+    margin-left: 7px;
+}
+.checked{
+    text-decoration: line-through;
+    text-shadow: 1px 1px 4px rgb(122, 115, 115);
+}
